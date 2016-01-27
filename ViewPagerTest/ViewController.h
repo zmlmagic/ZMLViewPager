@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "KFWViewPager.h"
 
-@interface ViewController : UIViewController
-
+@interface ViewController : UIViewController<KFWViewPagerDelegate>
+{
+    //ViewPager* _vp;
+}
 @end

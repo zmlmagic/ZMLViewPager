@@ -24,6 +24,9 @@
 		1D98E410171EC6C9000B669F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D98E3E8171EC6C9000B669F /* Foundation.framework */; };
 		1D98E418171EC6C9000B669F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1D98E416171EC6C9000B669F /* InfoPlist.strings */; };
 		1D98E41B171EC6C9000B669F /* ViewPagerTestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D98E41A171EC6C9000B669F /* ViewPagerTestTests.m */; };
+		1D98E430171EC7D2000B669F /* MyPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D98E42D171EC7D2000B669F /* MyPageControl.m */; };
+		1D98E431171EC7D2000B669F /* ViewPager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D98E42F171EC7D2000B669F /* ViewPager.m */; };
+		1E150A171B68C83A0033EF2C /* KFWViewPager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E150A161B68C83A0033EF2C /* KFWViewPager.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +63,12 @@
 		1D98E417171EC6C9000B669F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1D98E419171EC6C9000B669F /* ViewPagerTestTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewPagerTestTests.h; sourceTree = "<group>"; };
 		1D98E41A171EC6C9000B669F /* ViewPagerTestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewPagerTestTests.m; sourceTree = "<group>"; };
+		1D98E42C171EC7D2000B669F /* MyPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MyPageControl.h; path = ViewPager/MyPageControl.h; sourceTree = "<group>"; };
+		1D98E42D171EC7D2000B669F /* MyPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MyPageControl.m; path = ViewPager/MyPageControl.m; sourceTree = "<group>"; };
+		1D98E42E171EC7D2000B669F /* ViewPager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ViewPager.h; path = ViewPager/ViewPager.h; sourceTree = "<group>"; };
+		1D98E42F171EC7D2000B669F /* ViewPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ViewPager.m; path = ViewPager/ViewPager.m; sourceTree = "<group>"; };
+		1E150A151B68C83A0033EF2C /* KFWViewPager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KFWViewPager.h; sourceTree = "<group>"; };
+		1E150A161B68C83A0033EF2C /* KFWViewPager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KFWViewPager.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +98,8 @@
 		1D98E3DA171EC6C9000B669F = {
 			isa = PBXGroup;
 			children = (
+				1E150A151B68C83A0033EF2C /* KFWViewPager.h */,
+				1E150A161B68C83A0033EF2C /* KFWViewPager.m */,
 				1D98E3EC171EC6C9000B669F /* ViewPagerTest */,
 				1D98E413171EC6C9000B669F /* ViewPagerTestTests */,
 				1D98E3E5171EC6C9000B669F /* Frameworks */,
@@ -119,6 +130,10 @@
 		1D98E3EC171EC6C9000B669F /* ViewPagerTest */ = {
 			isa = PBXGroup;
 			children = (
+				1D98E42C171EC7D2000B669F /* MyPageControl.h */,
+				1D98E42D171EC7D2000B669F /* MyPageControl.m */,
+				1D98E42E171EC7D2000B669F /* ViewPager.h */,
+				1D98E42F171EC7D2000B669F /* ViewPager.m */,
 				1D98E3F5171EC6C9000B669F /* AppDelegate.h */,
 				1D98E3F6171EC6C9000B669F /* AppDelegate.m */,
 				1D98E3FE171EC6C9000B669F /* MainStoryboard_iPhone.storyboard */,
@@ -200,7 +215,7 @@
 			name = ViewPagerTestTests;
 			productName = ViewPagerTestTests;
 			productReference = 1D98E40C171EC6C9000B669F /* ViewPagerTestTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productType = "com.apple.product-type.bundle.ocunit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -277,6 +292,9 @@
 				1D98E3F3171EC6C9000B669F /* main.m in Sources */,
 				1D98E3F7171EC6C9000B669F /* AppDelegate.m in Sources */,
 				1D98E406171EC6C9000B669F /* ViewController.m in Sources */,
+				1E150A171B68C83A0033EF2C /* KFWViewPager.m in Sources */,
+				1D98E430171EC7D2000B669F /* MyPageControl.m in Sources */,
+				1D98E431171EC7D2000B669F /* ViewPager.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -393,6 +411,7 @@
 		1D98E41F171EC6C9000B669F /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewPagerTest/ViewPagerTest-Prefix.pch";
 				INFOPLIST_FILE = "ViewPagerTest/ViewPagerTest-Info.plist";
@@ -404,6 +423,7 @@
 		1D98E420171EC6C9000B669F /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "ViewPagerTest/ViewPagerTest-Prefix.pch";
 				INFOPLIST_FILE = "ViewPagerTest/ViewPagerTest-Info.plist";
@@ -465,6 +485,7 @@
 				1D98E420171EC6C9000B669F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1D98E421171EC6C9000B669F /* Build configuration list for PBXNativeTarget "ViewPagerTestTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +494,7 @@
 				1D98E423171EC6C9000B669F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
